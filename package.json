@@ -1,0 +1,19 @@
+{
+  "name": "statsck-api",
+  "version": "1.0.0",
+  "description": "Stack API - Beta Version",  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Joás Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "axios": "^0.26.0",
+    "firebase-admin": "^10.0.2",
+    "got": "^12.0.1",
+    "node-fetch": "^3.2.0",
+    "nodemon": "^2.0.15"
+  }
+}
