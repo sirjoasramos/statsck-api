@@ -4,7 +4,7 @@
   "description": "Stack API - Beta Version",  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node app.js"
   },
   "author": "Joás Ramos",
   "license": "ISC",
@@ -15,5 +15,9 @@
     "got": "^12.0.1",
     "node-fetch": "^3.2.0",
     "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sirjoasramos/statsck-api.git"
   }
 }
