@@ -1,9 +1,9 @@
 {
   "name": "statsck-api",
   "version": "1.0.0",
-  "description": "Stack API - Beta Version",  
+  "description": "Stack API - Beta Version",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha 'tests/**/*.js'",
     "start": "node app.js"
   },
   "author": "Joás Ramos",
@@ -19,5 +19,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sirjoasramos/statsck-api.git"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
   }
 }
