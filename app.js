@@ -11,7 +11,9 @@ const init = async () => {
         port: process.env.PORT || 8080,
         host: "0.0.0.0",
         routes: {
-            cors: true
+            cors: {
+                origin: ['ignore']
+            }
         },
         state: {
             strictHeader: false // corrige problema com cookies
