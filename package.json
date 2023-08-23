@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Stack API - Beta Version",
   "scripts": {
-    "test": "mocha 'tests/**/*.js'",
-    "start": "node app.js"
+    "test": "nyc mocha 'tests/**/*.js'",
+    "start": "nodemon app.js"
   },
   "author": "Joás Ramos",
   "license": "ISC",
@@ -14,7 +14,7 @@
     "firebase-admin": "^10.0.2",
     "got": "^12.0.1",
     "node-fetch": "^3.2.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.22"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
     "sinon": "^15.2.0"
   }
 }
