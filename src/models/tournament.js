@@ -4,6 +4,11 @@ const TournamentAliasesEnum = {
     "Championship": "championship",
     "Brasileiro Série A": "brasileiro_serie_a",
     "Brasileiro Série B": "brasileiro_serie_b",
+    "LaLiga": "laliga",
+    "Bundesliga": "bundesliga",
+    "Serie A": "serie_a",
+    "Ligue 1": "ligue_1",
+    "Eredivisie": "eredivisie"
 };
 
 // Classe para representar os torneios
