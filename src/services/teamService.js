@@ -4,34 +4,45 @@ const { Tournament, TournamentAliasesEnum } = require('../models/tournament');
 class TeamService {
     static async getHomeTeamsData(request, response) {
 
-        const db = getFirestore();
+        const tournament = request.query.tournament;
+        const database = this.getDataBase(tournament);
 
-        const trn = db.collection(request.query.tournament);
-        const snapshot = await trn.where("game.homeTeam", "==", request.query.team).get();
-
-        if (snapshot.empty) {
-            return { dados: 'sem-registros' };
+        if (!tournament || !database.HOME_STATS_DATABASE_NAME) {
+            throw new Error('Instância válida da classe Tournament é obrigatória.');
         }
-
-         // Mapear dados dos documentos
-         const dados = snapshot.docs.map(doc => doc.data());
-         return dados;
-
+        
+        try {
+            const db = getFirestore();
+            const trn = db.collection(database.HOME_STATS_DATABASE_NAME);
+            const snapshot = await trn.get();
+    
+            const allTeamData = snapshot.docs.map(doc => doc.data());
+            return allTeamData;
+        } catch (error) {
+            console.error("Error fetching all teams data:", error);
+            throw new Error("Failed to fetch all teams data.");
+        }
     }
 
     static async getAwayTeamsData(request, response) {
-        const db = getFirestore();
+        const tournament = request.query.tournament;
+        const database = this.getDataBase(tournament);
 
-        const trn = db.collection(request.query.tournament);
-        const snapshot = await trn.where("game.awayTeam", "==", request.query.team).get();
-
-        if (snapshot.empty) {
-            return { dados: 'sem-registros' };
-        } 
-
-         // Mapear dados dos documentos
-         const dados = snapshot.docs.map(doc => doc.data());
-         return dados;
+        if (!tournament || !database.AWAY_STATS_DATABASE_NAME) {
+            throw new Error('Instância válida da classe Tournament é obrigatória.');
+        }
+        
+        try {
+            const db = getFirestore();
+            const trn = db.collection(database.AWAY_STATS_DATABASE_NAME);
+            const snapshot = await trn.get();
+    
+            const allTeamData = snapshot.docs.map(doc => doc.data());
+            return allTeamData;
+        } catch (error) {
+            console.error("Error fetching all teams data:", error);
+            throw new Error("Failed to fetch all teams data.");
+        }
 
     }
     static async getAllTeamsData(request, response) {
@@ -41,8 +52,6 @@ class TeamService {
         if (!tournament || !database.ALL_MATCHS_DATABASE_NAME) {
             throw new Error('Instância válida da classe Tournament é obrigatória.');
         }
-    
-        console.log(database.ALL_MATCHS_DATABASE_NAME);
         
         try {
             const db = getFirestore();
