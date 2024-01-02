@@ -6,13 +6,11 @@ class TournamentService {
     static async saveGamesFromTournament(request, response) {
         const payload = request.payload;
         const db = getFirestore();
-        
+
         try {
             for (const game of payload) {
                 await db.collection(this.getDataBase(game.tournament).ALL_MATCHS_DATABASE_NAME)
                     .doc(`g-${game.id}`)
-                    //.collection(`round ${game.round}`)
-                    //.doc('g-' + game.id)
                     .set(game);
             }
 
@@ -32,8 +30,6 @@ class TournamentService {
             for (const team of payload.stats) {
                 await db.collection(dataBase)
                     .doc(`${team.name}`)
-                    //.collection(`${team.name}`)
-                    //.doc('stats')
                     .set(team.statistics);
             }
 
@@ -52,8 +48,6 @@ class TournamentService {
             for (const team of payload.stats) {
                 await db.collection(dataBase)
                     .doc(`${team.name}`)
-                    //.collection(`${team.name}`)
-                    //.doc('stats')
                     .set(team.statistics);
             }
 
@@ -72,8 +66,6 @@ class TournamentService {
             for (const game of payload.games) {
                 await db.collection(dataBase)
                     .doc(`g-${game.id}`)
-                    //.collection(`g-${game.id}`)
-                    //.doc('teams')
                     .set(game);
             }
 
