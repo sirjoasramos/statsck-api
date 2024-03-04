@@ -16,7 +16,7 @@ const init = async () => {
         state: {
             strictHeader: false // corrige problema com cookies
         }
-    });
+    }); 
 
     // Carrega rotas
     await server.register([
