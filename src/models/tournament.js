@@ -12,6 +12,7 @@ const TournamentAliasesEnum = {
     "Serie A": "serie_a",
     "Ligue 1": "ligue_1",
     "Eredivisie": "eredivisie",
+    "Eerstedivisie":"eerste",
     "Premiership": "premiership",
     "Championship - Scotland":"championship-scotland",
     "Pro League": "belgica_league",
@@ -35,7 +36,13 @@ const TournamentAliasesEnum = {
     "Israeli Premier League":"israel_premier_league",
     "Liga Portugal":"liga_portugal",
     "Liga Portugal 2":"liga_portugal_2",
-    "Premiership - África":"premiership_africa"
+    "Premiership - África":"premiership_africa",
+    "Liga MX":"liga_mx",
+    "Chile - Primera Division": "chile",
+    "J1 League":"japao",
+    "Saudi Pro League":"saudi",
+    "CFA Super League":"china",
+    "UAE Pro League":"uae",
 };
 
 // Classe para representar os torneios

@@ -30,7 +30,7 @@ class TournamentService {
             for (const team of payload.stats) {
                 await db.collection(dataBase)
                     .doc(`${team.name}`)
-                    .set(team.statistics);
+                    .set(team.statistics);                
             }
 
             return { message: "success" };
