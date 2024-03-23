@@ -43,6 +43,7 @@ const TournamentAliasesEnum = {
     "Saudi Pro League":"saudi",
     "CFA Super League":"china",
     "UAE Pro League":"uae",
+    "LaLiga 2":"laliga2"
 };
 
 // Classe para representar os torneios
