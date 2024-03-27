@@ -45,7 +45,9 @@ const TournamentAliasesEnum = {
     "UAE Pro League":"uae",
     "LaLiga 2":"laliga2",
     "Liga do Uruguai":"uruguai",
-    "Liga da Colombia":"colombia"
+    "Liga da Colombia":"colombia",
+    "Liga do Paraguai":"paraguai",
+    "Liga da Argentina":"argentina"
 };
 
 // Classe para representar os torneios
