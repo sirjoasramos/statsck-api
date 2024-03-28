@@ -48,7 +48,9 @@ const TournamentAliasesEnum = {
     "Liga da Colombia":"colombia",
     "Liga do Paraguai":"paraguai",
     "Liga da Argentina":"argentina",
-    "Liga da Bolivia":"bolivia"
+    "Liga da Bolivia":"bolivia",
+    "Liga do Peru":"peru",
+    "Liga do Venezuela":"venezuela"
 };
 
 // Classe para representar os torneios
