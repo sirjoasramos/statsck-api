@@ -22,6 +22,26 @@ module.exports = {
             method:'POST',
             path:'/savematchday',
             handler: TournamentController.saveMatchDay
+        }),
+        server.route({
+            method:'POST',
+            path:'/saveminemaphomeck',
+            handler: TournamentController.saveFootMineMapHomeCk
+        }),
+        server.route({
+            method:'POST',
+            path:'/saveminemapawayck',
+            handler: TournamentController.saveFootMineMapAwayCk
+        }),
+        server.route({
+            method: 'GET',
+            path: '/getminemaphomeck',
+            handler: TournamentController.getMineMapHomeCk
+        }),
+        server.route({
+            method: 'GET',
+            path: '/getminemapawayck',
+            handler: TournamentController.getMineMapAwayCk
         })
     }
 }

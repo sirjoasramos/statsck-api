@@ -16,6 +16,22 @@ class TournamentController{
     static async saveMatchDay(request, response){
         return await TournamentService.saveMatchsDayFromTournament(request, response);
     }
+
+    static async saveFootMineMapHomeCk(request, response){
+        return await TournamentService.saveFootMineMapHomeCk(request, response);
+    }
+
+    static async saveFootMineMapAwayCk(request, response){
+        return await TournamentService.saveFootMineMapAwayCk(request, response);
+    } 
+
+    static async getMineMapHomeCk(req, response) {       
+        return await TournamentService.getMineMapHomeCk(req, response);
+    }
+
+    static async getMineMapAwayCk(req, response) {       
+        return await TournamentService.getMineMapAwayCk(req, response);
+    }
 }
 
 module.exports = TournamentController;
