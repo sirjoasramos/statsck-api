@@ -52,8 +52,10 @@ const TournamentAliasesEnum = {
     "Liga do Peru":"peru",
     "Liga do Venezuela":"venezuela",
     "Liga da Coreia do Sul":"coreia",
-    "nba":"nba"
-};
+    "Liga da Irlanda":"irlanda",
+    "Liga do Equador":"equador",
+    "nba":"nba",
+}; 
 
 // Classe para representar os torneios
 class Tournament {

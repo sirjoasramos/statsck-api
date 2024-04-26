@@ -4,7 +4,7 @@
   "description": "Stack API - Beta Version",
   "scripts": {
     "test": "nyc mocha 'tests/**/*.js'",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "Joás Ramos",
   "license": "ISC",
