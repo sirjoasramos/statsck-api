@@ -38,8 +38,8 @@ const TournamentAliasesEnum = {
     "Portugal":"liga_portugal",
     "Portugal - 2ª Divisão":"liga_portugal_2",
     "Premiership - África":"premiership_africa",
-    "Liga do México":"liga_mx",
-    "Liga do Chile": "chile",
+    "México":"liga_mx",
+    "Chile": "chile",
     "Japão":"japao",
     "Arábia":"saudi",
     "China":"china",
@@ -49,15 +49,21 @@ const TournamentAliasesEnum = {
     "Colômbia":"colombia",
     "Paraguai":"paraguai",
     "Argentina":"argentina",
+    "Argentina - 2ª Divisão":"argentina2",
     "Bolívia":"bolivia",
     "Peru":"peru",
     "Venezuela":"venezuela",
     "Coreia do Sul":"coreia",
-    "Coreia do Sul - 2ª Divisão'":"coreia2",
+    "Coreia do Sul - 2ª Divisão":"coreia2",
     "Irlanda":"irlanda",
     "Equador":"equador",
     "nba":"nba",
-    "Japão - 2ª Divisão":"japao2"
+    "Japão - 2ª Divisão":"japao2",
+    "Noruega - 2ª Divisão":"noruega",
+    "Noruega - Elite":"noruega_elite",
+    "Canadá":"canada",
+    "Islandia":"islandia",
+    "MLS":"mls"
 }; 
 
 // Classe para representar os torneios
