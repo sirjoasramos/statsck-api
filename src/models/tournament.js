@@ -63,7 +63,8 @@ const TournamentAliasesEnum = {
     "Noruega - Elite":"noruega_elite",
     "Canadá":"canada",
     "Islandia":"islandia",
-    "MLS":"mls"
+    "MLS":"mls",
+    "Euro 2021":"euro21"
 }; 
 
 // Classe para representar os torneios
